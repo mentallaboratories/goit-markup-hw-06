@@ -237,7 +237,8 @@ body{
     margin-right: auto;
     max-width: 696px;
 }
-.hero-button{
+.hero-button,
+.submit-button{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -251,6 +252,7 @@ body{
     height: 50px;
     border-radius: 4px;
     border-style:none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     transition: color var(--common-transition), background-color var(--common-transition);
 }
@@ -513,7 +515,8 @@ body{
 
 /* ------- FOOTER SOCIAL LINKS -------------- */
 
-.social-links-title{
+.social-links-title,
+.footer-subscribe-title{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -533,6 +536,37 @@ body{
     fill:var(--background-color)
 } 
 
+.footer-subscribe-form{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-email{
+    width: 358px;
+    height: 50px;
+
+    background-color: transparent;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+
+.submit-button {
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.87;
+}
 
 /*!!!--------PORTFOLIO------------!!!*/
 
@@ -711,4 +745,6 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+
 
