@@ -758,6 +758,8 @@ body{
 
 .icon-exit-modal{
     fill:#000000;
+
+    transition: fill var(--common-transition);
 }
 
 .exit-btn:hover .icon-exit-modal,
