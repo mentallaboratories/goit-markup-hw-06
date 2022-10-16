@@ -474,8 +474,8 @@ body{
 
 .footer-content{
     display: flex;
-    gap: 70px;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 
@@ -517,7 +517,7 @@ body{
 /* ------- FOOTER SOCIAL LINKS -------------- */
 
 .social-links-title,
-.footer-subscribe-title{
+.subscribe-title{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -542,11 +542,11 @@ body{
     gap: 12px;
     align-items: center;
 }
-.footer-input-label{
+.email-label{
     position:absolute;
 }
 
-.footer-email{
+.subscribe-email-input{
     width: 358px;
     height: 50px;
 
@@ -555,7 +555,7 @@ body{
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color:var(--light-text-color);
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -563,7 +563,11 @@ body{
     padding-left: 16px;
 }
 
-.footer-email:focus-within{
+.subscribe-email-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-email-input:focus-within{
     outline: none;
 }
 
@@ -817,7 +821,6 @@ body{
     transition: border var(--common-transition);
 }
 
-.backdrop-input:hover,
 .backdrop-input:focus {
     border: 1px solid var(--accent-color);
 }
@@ -855,7 +858,6 @@ body{
     color: rgba(117, 117, 117, 0.5);
 }
 
-.backdrop-textarea:hover,
 .backdrop-textarea:focus{
     border: 1px solid var(--accent-color);
 }
@@ -880,6 +882,10 @@ body{
     justify-content: center;
  
     margin-bottom: 30px;
+}
+
+.comment{
+    margin-bottom: 20px;
 }
 
 .backdrop-checkbox-input{
